@@ -14,7 +14,7 @@ class MedicalGraph:
         loader = DataLoader(input_file_path=input_data_path,output_file_path=output_data_path,limit=200)
         loader.save_data()
         self.data_path = output_data_path
-        self.g = Graph('bolt://localhost:7687', auth=('neo4j', '@Xh19990820'))
+        self.g = Graph('bolt://localhost:7687', auth=('neo4j', '123456'))
         self.g.delete_all()
 
     '''读取文件'''
